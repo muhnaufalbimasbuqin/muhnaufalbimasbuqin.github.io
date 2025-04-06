@@ -1,0 +1,925 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8fafc;
+  font-family: poppins, sans-serif;
+}
+
+/* Navbar Style Start */
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav__logo-wrapper .logo {
+  display: block;
+  height: 60px;
+}
+
+.nav__links {
+  font-weight: 600;
+  font-size: 18px;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__link {
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 8px;
+  color: #181c14;
+  transition: 0.5s;
+}
+
+.nav__link:hover {
+  background-color: #181c14;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+/* Navbar Style End */
+
+/* Hero Style Start */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 15%;
+  color: #181c14;
+  background: linear-gradient(to top,#b6b6b677, #ffffff);
+  
+}
+
+.hero__content .hero__title {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.hero__content .hero__subtitle {
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.hero__social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.hero__social-icon {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #181c14;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.hero__social-icon:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.more-button {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: #181c14;
+  color: white;
+  transition: 0.5s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 2rem;
+}
+
+.more-button:hover {
+  color: #181c14;
+  background-color: rgba(245, 245, 245, 0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero__image {
+  height: 800px;
+  position: relative;
+  top: 87px;
+}
+/* Hero Style End */
+
+/* About Style Start */
+#about {
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 8rem 10%;
+  scroll-margin-top: 92px;
+}
+
+.about__image {
+  display: flex;
+  height: 630px;
+  border-radius: 15px;
+  margin-right: 40px;
+  margin-left: -30px;
+}
+
+.about__description {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 15px;
+  padding: 0 15%;
+}
+
+.about__description h1 {
+  color: #181c14;
+  padding-bottom: 20px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.about__description p {
+  color: #181c14bf;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.cv-button {
+  background-color: transparent;
+  color: #181c14;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cv-button:hover {
+  background-color: #181c14;
+  color: #dad8d8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.about__skills .skills h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: #181c14;
+  font-size: 16px;
+}
+
+.progress-bar {
+  background: #959595;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+}
+
+.progress-bar div span {
+  font-weight: 600;
+  font-size: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #181c14;
+  float: right;
+  margin-top: -10px;
+  margin-right: -20px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress--html {
+  background-color: #181c14;
+  animation: html 1.5s linear forwards;
+}
+
+.progress--css {
+  background-color: #181c14;
+  animation: css 1.5s linear forwards;
+}
+
+.progress--wordpress {
+  background-color: #181c14;
+  animation: wordpress 1.5s linear forwards;
+}
+
+.progress--html span,
+.progress--css span,
+.progress--wordpress span {
+  border: 2px solid #181c14;
+}
+
+@keyframes html {
+  100% {
+    width: 60%;
+  }
+}
+@keyframes css {
+  100% {
+    width: 50%;
+  }
+}
+@keyframes wordpress {
+  100% {
+    width: 70%;
+  }
+}
+/* About Style End */
+
+/* Portfolio Style Start */
+#portofolio {
+  background: linear-gradient(to bottom,#b6b6b677, #ffffff);
+  padding: 9rem 15%;
+}
+
+.portfolio__header h1 {
+  text-align: center;
+  font-size: 60px;
+  word-spacing: 2px;
+  padding-top: 10px;
+  color: #181c14;
+}
+
+.portfolio__header p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.61);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.portfolio__grid {
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15%;
+  margin: 0 10%;
+  gap: 2rem;
+}
+
+.portfolio__item {
+  background-color: #181c14;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  width: 100%;
+  border-radius: 15px;
+  padding-top: 2.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.portfolio__img {
+  width: 250px; 
+  height: 250px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.portfolio__desc {
+  margin-top: 30px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 2rem 9%;
+}
+
+
+.portfolio__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #181c14;
+  padding: 0.5rem 30%;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 30px;
+  margin-top: 45px;
+  margin-bottom: -50px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.portfolio__link:hover {
+  transform: scale(1.1);
+}
+/* Portfolio Style End */
+
+/* Contact Style Start */
+#kontak {
+  padding: 0 7%;
+  background-color: white;
+}
+
+#kontak div h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #181c14;
+}
+
+#kontak div p {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 20px;
+  color: #181c14;
+}
+
+.contact__content {
+  border-radius: 20px;
+  padding: 4rem 0;
+}
+
+.contact__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #181c14;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.contact__icon:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+/* Contact Style End */
+
+/* Footer Style Start */
+footer {
+  background-color: #181c14;
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+
+footer p {
+  text-align: center;
+}
+/* Footer Style End */
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 5%;
+  }
+
+  .nav__links {
+    font-size: 16px;
+    gap: 1rem;
+  }
+
+  .hero__content .hero__title {
+    font-size: 50px;
+  }
+
+  .hero__content .hero__subtitle {
+    font-size: 20px;
+  }
+
+  .hero__image {
+    height: 500px;
+  }
+
+  #about {
+    padding: 5rem 5%;
+  }
+
+
+  .about__description {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .about__description h1 {
+    font-size: 40px;
+  }
+
+  .about__description p {
+    font-size: 14px;
+  }
+
+  .portfolio__header h1 {
+    font-size: 40px;
+  }
+
+  .portfolio__header p {
+    font-size: 14px;
+  }
+
+  .portfolio__grid {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+
+  .portfolio__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .portfolio__link {
+    padding: 0.5rem 20%;
+  }
+
+  #kontak div h1 {
+    font-size: 24px;
+  }
+
+  #kontak div p {
+    font-size: 12px;
+  }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  nav {
+    padding: 1rem 5%;
+  }
+
+  .nav__logo-wrapper .logo {
+    height: 30px;
+  }
+
+  .nav__links {
+    gap: 1px;
+  }
+
+  .nav__link {
+    font-size: 12px;
+  }
+
+  #hero {
+    padding: 1rem 5%;
+  }
+
+  .hero__content .hero__title {
+    font-size: 25px;
+  }
+
+  .hero__content .hero__subtitle {
+    font-size: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero__image {
+    height: 310px;
+    top: 23px;
+  }
+
+  .hero__social {
+    gap: 5px;
+    margin-bottom: 0;
+  }
+
+  .hero__social-icon {
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .more-button {
+    display: none;
+  }
+
+  #about {
+    padding: 4rem 5%;
+  }
+
+
+  .about__description {
+    padding: 0rem 25%;
+    display: contents;
+  }
+
+  .about__description h1 {
+    font-size: 30px;
+  }
+
+  .about__description p {
+    font-size: 10px;
+  }
+
+  .progress-bar {
+    height: 5px;
+  }
+
+  .progress-bar div {
+    height: 5px;
+  }
+
+  .progress-bar div span {
+    font-size: 8px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .cv-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  #portofolio {
+    padding: 1rem 5%;
+  }
+
+  .portfolio__grid {
+    padding: 2rem 10%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portfolio__item {
+    width: 70%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .portfolio__img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .portfolio__desc {
+    font-size: 8px;
+    font-weight: 600;
+    padding: 0.5rem 8%;
+    margin-top: 10px;
+  }
+
+  .portfolio__link {
+    font-size: 12px;
+    padding: 5px 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+
+  #kontak {
+    padding: 1rem 5%;
+  }
+
+  #kontak div h1 {
+    font-size: 20px;
+  }
+
+  #kontak div p {
+    font-size: 10px;
+  }
+
+  .contact__icon {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  nav {
+    padding: 1rem 5%;
+  }
+
+  .nav__logo-wrapper .logo {
+    height: 30px;
+  }
+
+  .nav__links {
+    gap: 1px;
+  }
+
+  .nav__link {
+    font-size: 12px;
+  }
+
+  #hero {
+    padding: 1rem 5%;
+  }
+
+  .hero__content .hero__title {
+    font-size: 40px;
+  }
+
+  .hero__content .hero__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .hero__image {
+    height: 310px;
+    top: 23px;
+  }
+
+  .hero__social {
+    gap: 5px;
+    margin-bottom: 0;
+  }
+
+  .hero__social-icon {
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .more-button {
+    display: none;
+  }
+
+  #about {
+    padding: 4rem 5%;
+  }
+
+
+  .about__description {
+    padding: 0rem 25%;
+    display: contents;
+  }
+
+  .about__description h1 {
+    font-size: 30px;
+  }
+
+  .about__description p {
+    font-size: 10px;
+  }
+
+  .progress-bar {
+    height: 5px;
+  }
+
+  .progress-bar div {
+    height: 5px;
+  }
+
+  .progress-bar div span {
+    font-size: 8px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .cv-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  #portofolio {
+    padding: 1rem 5%;
+  }
+
+  .portfolio__grid {
+    padding: 2rem 10%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portfolio__item {
+    width: 70%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .portfolio__img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .portfolio__desc {
+    font-size: 8px;
+    font-weight: 600;
+    padding: 0.5rem 8%;
+    margin-top: 10px;
+  }
+
+  .portfolio__link {
+    font-size: 12px;
+    padding: 5px 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+
+  #kontak {
+    padding: 1rem 5%;
+  }
+
+  #kontak div h1 {
+    font-size: 20px;
+  }
+
+  #kontak div p {
+    font-size: 10px;
+  }
+
+  .contact__icon {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }  
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  nav {
+    padding: 1rem 5%;
+  }
+
+  .nav__logo-wrapper .logo {
+    height: 30px;
+  }
+
+  .nav__links {
+    gap: 1px;
+  }
+
+  .nav__link {
+    font-size: 12px;
+  }
+
+  #hero {
+    padding: 1rem 15%;
+  }
+
+  .hero__content .hero__title {
+    font-size: 40px;
+  }
+
+  .hero__content .hero__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .hero__image {
+    height: 310px;
+    top: 23px;
+  }
+
+  .hero__social {
+    gap: 5px;
+    margin-bottom: 0;
+  }
+
+  .hero__social-icon {
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .more-button {
+    display: none;
+  }
+
+  #about {
+    padding: 4rem 5%;
+  }
+
+
+  .about__description {
+    padding: 0rem 25%;
+    display: contents;
+  }
+
+  .about__description h1 {
+    font-size: 30px;
+  }
+
+  .about__description p {
+    font-size: 10px;
+  }
+
+  .progress-bar {
+    height: 5px;
+  }
+
+  .progress-bar div {
+    height: 5px;
+  }
+
+  .progress-bar div span {
+    font-size: 8px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .cv-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  #portofolio {
+    padding: 1rem 5%;
+  }
+
+  .portfolio__grid {
+    padding: 2rem 10%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portfolio__item {
+    width: 50%;
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .portfolio__img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .portfolio__desc {
+    font-size: 8px;
+    font-weight: 600;
+    padding: 0.5rem 8%;
+    margin-top: 10px;
+  }
+
+  .portfolio__link {
+    font-size: 12px;
+    padding: 5px 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+
+  #kontak {
+    padding: 1rem 5%;
+  }
+
+  #kontak div h1 {
+    font-size: 20px;
+  }
+
+  #kontak div p {
+    font-size: 10px;
+  }
+
+  .contact__icon {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
+
+
+
